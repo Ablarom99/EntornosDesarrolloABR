@@ -19,9 +19,11 @@ class menormayor_primoTest {
 	@Test
 	public void testMayorMenor() {
 		
-		int resultado[] = Menormayor_primo.mayorMenor(1, 2, 3);
+		int resultado[] = Menormayor_primo.mayorMenor(3, 2, 1);
+		int resultado2[] = Menormayor_primo.mayorMenor(1, 2, 3);
 		int esperado[] = new int[] {3,1};
 		
 		assertArrayEquals(resultado, esperado);
+		assertArrayEquals(resultado2, esperado);
 	}
 }
